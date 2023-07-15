@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando el total</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="card">
+      <img src="assets/img/bag.png" alt="Bag">
+      <h6>Satchel Black Bag</h6>
+      <input id="quantity" placeholder="Cantidad" type="text">
+      <input id="color" placeholder="Color" type="text">
+      <p class="price-text">Precio: $ <span id="price">80000</span></p>
+      <button class="calculate" onclick="result()">Calcular total</button>
+      <!--<button onclick="
+        quantityValue = document.querySelector('#quantity').value
+        colorValue = document.querySelector('#color').value
+        priceValue = document.querySelector('#price').innerHTML
+        document.querySelector('#total-price').innerHTML = Number(quantityValue) * Number(priceValue)
+        document.querySelector('#total-quantity').innerHTML = quantityValue
+        document.querySelector('#selected-color').style.backgroundColor = colorValue">
+        Calcular Total</button>-->
+    </div>
+    <div class="result">
+      <p>Total: $ <span id="total-price"></span></p>
+      <p>Cantidad: <span id="total-quantity"></span></p>
+      <p>Color: <span id="selected-color" class="circle"></span></p>
+    </div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
